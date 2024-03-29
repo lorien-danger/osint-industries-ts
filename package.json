@@ -1,0 +1,42 @@
+{
+	"name": "osint-client-ts",
+	"version": "0.1.0",
+	"description": "An opinionated TypeScript wrapper for the OSINT Industries API",
+	"main": "dist/index.js",
+	"module": "dist/index.mjs",
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"build": "tsc",
+		"prepublish": "pnpm run build",
+		"lint": "eslint src --ext .ts",
+		"format": "prettier --write \"src/**/*.ts\"",
+		"test": "jest"
+	},
+	"exports": {
+		".": {
+			"import": "./dist/index.mjs",
+			"require": "./dist/index.js"
+		}
+	},
+	"keywords": [
+		"osint",
+		"api",
+		"client",
+		"typescript",
+		"wrapper"
+	],
+	"author": "Lorien Danger",
+	"license": "MIT",
+	"packageManager": "pnpm@8.15.4+sha256.cea6d0bdf2de3a0549582da3983c70c92ffc577ff4410cbf190817ddc35137c2",
+	"dependencies": {
+		"@types/node": "^20.11.30",
+		"cross-fetch": "^4.0.0",
+		"typescript": "^5.4.3"
+	},
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^7.4.0",
+		"eslint": "^8.57.0",
+		"eslint-config-prettier": "^9.1.0",
+		"prettier": "^3.2.5"
+	}
+}
