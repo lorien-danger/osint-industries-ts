@@ -1,3 +1,5 @@
+import type { PlatformVariable } from './platformVariable';
+
 export interface SpecFormat {
     registered?: {
         proper_key: string;
@@ -85,11 +87,4 @@ export interface SpecFormat {
         type: 'bool';
     };
     platformVariables?: PlatformVariable[];
-}
-
-export interface PlatformVariable {
-    key: string;
-    proper_key: string;
-    value: any;
-    type: string;
 }
