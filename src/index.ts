@@ -1,6 +1,5 @@
-import 'cross-fetch/polyfill';
 import type { Module, SpecFormat, PlatformVariable } from './types/raw';
-// import fetch from 'cross-fetch';
+import fetch from 'cross-fetch';
 
 interface ClientOptions {
     apiKey: string;
