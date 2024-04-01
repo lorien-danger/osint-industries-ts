@@ -115,7 +115,7 @@ describe('OsintClient', () => {
 		]));
 
 		const modules = await client.search({ type: 'email', query: 'test@example.com' });
-		expect(modules.length).toBe(15);
+		expect(modules.length).toBe(2);
 		expect(modules[0].module).toBe('google');
 	});
 

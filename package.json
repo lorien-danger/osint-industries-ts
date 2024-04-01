@@ -10,7 +10,7 @@
 		"prepublish": "pnpm run build",
 		"lint": "eslint src --ext .ts",
 		"format": "prettier --write \"src/**/*.ts\"",
-		"test": "jest"
+		"test": "jest src/"
 	},
 	"exports": {
 		".": {
