@@ -1,6 +1,6 @@
 {
 	"name": "osint-industries-ts",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "An opinionated TypeScript wrapper for the OSINT Industries API",
 	"main": "dist/index.js",
 	"module": "dist/index.mjs",
@@ -13,11 +13,12 @@
 		"test": "jest src/"
 	},
 	"exports": {
-		".": {
-			"import": "./dist/index.mjs",
-			"require": "./dist/index.js"
-		}
-	},
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
 	"keywords": [
 		"osint",
 		"api",
