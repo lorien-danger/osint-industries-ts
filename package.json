@@ -1,6 +1,6 @@
 {
 	"name": "osint-industries-ts",
-	"version": "0.1.4",
+	"version": "0.1.5",
 	"description": "An opinionated TypeScript wrapper for the OSINT Industries API",
 	"main": "dist/index.js",
 	"module": "dist/index.mjs",
