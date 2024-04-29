@@ -16,27 +16,27 @@ export interface SpecFormat {
 		value: string;
 		type: 'str';
 	};
-	firstName?: {
+	first_name?: {
 		proper_key: string;
 		value: string;
 		type: 'str';
 	};
-	lastName?: {
+	last_name?: {
 		proper_key: string;
 		value: string;
 		type: 'str';
 	};
-	pictureUrl?: {
+	picture_url?: {
 		proper_key: string;
 		value: string;
 		type: 'str';
 	};
-	profileUrl?: {
+	profile_url?: {
 		proper_key: string;
 		value: string;
 		type: 'str';
 	};
-	bannerUrl?: {
+	banner_url?: {
 		proper_key: string;
 		value: string;
 		type: 'str';
@@ -61,12 +61,12 @@ export interface SpecFormat {
 		value: string;
 		type: 'str';
 	};
-	lastSeen?: {
+	last_seen?: {
 		proper_key: string;
 		value: string;
 		type: 'datetime';
 	};
-	creationDate?: {
+	creation_date?: {
 		proper_key: string;
 		value: string;
 		type: 'datetime';
@@ -86,5 +86,5 @@ export interface SpecFormat {
 		value: boolean;
 		type: 'bool';
 	};
-	platformVariables?: PlatformVariable[];
+	platform_variables?: PlatformVariable[];
 }

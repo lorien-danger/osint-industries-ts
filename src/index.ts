@@ -109,20 +109,20 @@ export class OsintClient implements Client {
 			if (specFormat.name !== undefined) {
 				parsedModule.data.name = specFormat.name.value;
 			}
-			if (specFormat.firstName !== undefined) {
-				parsedModule.data.firstName = specFormat.firstName.value;
+			if (specFormat.first_name !== undefined) {
+				parsedModule.data.firstName = specFormat.first_name.value;
 			}
-			if (specFormat.lastName !== undefined) {
-				parsedModule.data.lastName = specFormat.lastName.value;
+			if (specFormat.last_name !== undefined) {
+				parsedModule.data.lastName = specFormat.last_name.value;
 			}
-			if (specFormat.pictureUrl !== undefined) {
-				parsedModule.data.pictureUrl = specFormat.pictureUrl.value;
+			if (specFormat.picture_url !== undefined) {
+				parsedModule.data.pictureUrl = specFormat.picture_url.value;
 			}
-			if (specFormat.profileUrl !== undefined) {
-				parsedModule.data.profileUrl = specFormat.profileUrl.value;
+			if (specFormat.profile_url !== undefined) {
+				parsedModule.data.profileUrl = specFormat.profile_url.value;
 			}
-			if (specFormat.bannerUrl !== undefined) {
-				parsedModule.data.bannerUrl = specFormat.bannerUrl.value;
+			if (specFormat.banner_url !== undefined) {
+				parsedModule.data.bannerUrl = specFormat.banner_url.value;
 			}
 			if (specFormat.username !== undefined) {
 				parsedModule.data.username = specFormat.username.value;
@@ -136,11 +136,11 @@ export class OsintClient implements Client {
 			if (specFormat.location !== undefined) {
 				parsedModule.data.location = specFormat.location.value;
 			}
-			if (specFormat.lastSeen !== undefined) {
-				parsedModule.data.lastSeen = specFormat.lastSeen.value;
+			if (specFormat.last_seen !== undefined) {
+				parsedModule.data.lastSeen = specFormat.last_seen.value;
 			}
-			if (specFormat.creationDate !== undefined) {
-				parsedModule.data.creationDate = specFormat.creationDate.value;
+			if (specFormat.creation_date !== undefined) {
+				parsedModule.data.creationDate = specFormat.creation_date.value;
 			}
 			if (specFormat.followers !== undefined) {
 				parsedModule.data.followers = specFormat.followers.value;
@@ -151,8 +151,8 @@ export class OsintClient implements Client {
 			if (specFormat.premium !== undefined) {
 				parsedModule.data.premium = specFormat.premium.value;
 			}
-			if (specFormat.platformVariables !== undefined) {
-				parsedModule.data.platformVariables = specFormat.platformVariables.map((platformVariable) => ({
+			if (specFormat.platform_variables !== undefined) {
+				parsedModule.data.platformVariables = specFormat.platform_variables.map((platformVariable) => ({
 					[platformVariable.key]: platformVariable.value as string,
 				}));
 			}
